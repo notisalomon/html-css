@@ -113,6 +113,26 @@ img {
     outline: none;
 }
 
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: white;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+/* Stats */
+.stats {
+    padding-top: 100px;
+}
+
 /*Utilities*/
 .container {
     max-width: 1100px;
@@ -162,4 +182,8 @@ img {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
 }
