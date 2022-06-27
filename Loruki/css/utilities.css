@@ -51,6 +51,16 @@
         background-color: var(--dark-color);
         color: white;
     }
+
+    .bg-primary a,
+    .btn-primary a,
+    .bg-secondary a,
+    .btn-secondary a,
+    .bg-dark a,
+    .btn-dark a {
+        color: white;
+    }
+
     
     .bg-light,
     .btn-light {
@@ -78,7 +88,7 @@
     .xl {
         font-size:  4rem;;
     }
-    
+
     .text-center {
         text-align: center;
     }
