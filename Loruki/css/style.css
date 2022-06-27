@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
 :root {
-    --primary-color:#047aed;
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 
 * {
@@ -11,7 +13,7 @@
 }
 
 body {
-    font-family: 'Lato',sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #333;
     line-height: 1.6;
 }
@@ -25,7 +27,8 @@ a {
     color: #333;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
@@ -39,7 +42,9 @@ img {
     width: 100%;
 }
 
+
 /*Navbar*/
+
 .navbar {
     background-color: var(--primary-color);
     color: white;
@@ -64,7 +69,9 @@ img {
     justify-content: space-between;
 }
 
+
 /*Showcase*/
+
 .showcase {
     height: 400px;
     background-color: var(--primary-color);
@@ -128,62 +135,44 @@ img {
     -ms-transform: skewY(-3deg);
 }
 
+
 /* Stats */
+
 .stats {
     padding-top: 100px;
 }
 
-/*Utilities*/
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
 }
 
-.card {
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    padding: 20px;
-    margin: 10px;
+.stats .grid h3 {
+    font-size: 35px;
 }
 
-.btn {
-    display: inline-block;padding: 10px 30px;
-    cursor: pointer;
-    background: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.btn-outline {
-    background-color: transparent;
-    border: 1px #fff solid;
-}
 
-.btn:hover {
-    transform: scale(.98)
-}
+/* Cli */
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid-3 {
+.cli .grid {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid>*:first-child {
+    grid-column: 1 /span 2;
+    grid-row: 1 / span 2;
+    ;
+}
+
+
+/*Cloud*/
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
 }
